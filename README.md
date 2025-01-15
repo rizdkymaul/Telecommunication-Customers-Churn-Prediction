@@ -10,7 +10,7 @@ made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](ht
 -   **Git and Github**
 
 Repository : [Telecommunication Customers Churn
-Prediction](https://github.com/nurimammasri/Marketing-Campaign-Model-Prediction-by-Datalicious.git)
+Prediction](https://github.com/rizdkymaul/Telecommunication-Customers-Churn-Prediction.git)
 
 -   **Dataset**
 
