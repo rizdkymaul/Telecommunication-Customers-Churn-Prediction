@@ -15,7 +15,7 @@ Prediction](https://github.com/nurimammasri/Marketing-Campaign-Model-Prediction-
 -   **Dataset**
 
 [Telecommunication
-Customer](https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign "Telecommunication Customer")
+Customer](https://github.com/rizdkymaul/Telecommunication-Customers-Churn-Prediction/blob/main/Telecom_Customers_Churn.csv "Telecommunication Customer")
 :::
 
  
