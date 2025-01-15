@@ -1,17 +1,3 @@
----
-jupyter:
-  colab:
-    toc_visible: true
-  kernelspec:
-    display_name: Python 3
-    name: python3
-  language_info:
-    name: python
-  nbformat: 4
-  nbformat_minor: 0
----
-
-::: {.cell .markdown id="jTaddxDBwP8U"}
 # **Telecommunication Customers Churn Prediction**
 
 **By Muhammad Rizdky Maulady**
@@ -32,7 +18,7 @@ Prediction](https://github.com/nurimammasri/Marketing-Campaign-Model-Prediction-
 Customer](https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign "Telecommunication Customer")
 :::
 
-::: {.cell .markdown id="C4Hq6zIseU79"}
+ 
 `1. Fitur mana yang sebaiknya digunakan dari hasil EDA?`
 
 `2. Apakah ada feature tambahan lain yang mendukung?`
@@ -1192,7 +1178,7 @@ plt.show()
 ```
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/ca58ba4e6b836419684a7a4502e3b5782863790b.png)
+![](asset/ca58ba4e6b836419684a7a4502e3b5782863790b.png)
 :::
 :::
 
@@ -1432,7 +1418,7 @@ plt.tight_layout()
 :::
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/14807771a607518eb0346e264bda9eb326fa4859.png)
+![](asset/14807771a607518eb0346e264bda9eb326fa4859.png)
 :::
 :::
 
@@ -2052,7 +2038,7 @@ plt.show()
 ```
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/c27776220099f555d64777752ff96870b541b4c0.png)
+![](asset/c27776220099f555d64777752ff96870b541b4c0.png)
 :::
 :::
 
@@ -2127,7 +2113,7 @@ plt.show()
 ```
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/30e4decf537f3e1ea810ecdf10546466fa06429d.png)
+![](asset/30e4decf537f3e1ea810ecdf10546466fa06429d.png)
 :::
 :::
 
@@ -2457,7 +2443,7 @@ plt.show()
 ```
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/04fb875fd68919a50dce5ac6196d7754d86a3e87.png)
+![](asset/04fb875fd68919a50dce5ac6196d7754d86a3e87.png)
 :::
 :::
 
@@ -2557,7 +2543,7 @@ plt.show()
 :::
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/60f40c3054ef98a5f5e418d666f99a7076ee2129.png)
+![](asset/60f40c3054ef98a5f5e418d666f99a7076ee2129.png)
 :::
 :::
 
@@ -3289,7 +3275,7 @@ plt.show()
 :::
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/14275b61752909f8d31cee5104b962535b3da73d.png)
+![](asset/14275b61752909f8d31cee5104b962535b3da73d.png)
 :::
 :::
 
@@ -3393,7 +3379,7 @@ plt.show()
 ```
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/04403529f09d7d20874bfcb0ffea0dfa4ff26715.png)
+![](asset/04403529f09d7d20874bfcb0ffea0dfa4ff26715.png)
 :::
 :::
 
@@ -3470,7 +3456,7 @@ feature_importance_df = show_feature_importance(best_rf_model, feature_names)
 ```
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/4f1da5768b10a5069d81447797d29b5bd6ab3a7a.png)
+![](asset/4f1da5768b10a5069d81447797d29b5bd6ab3a7a.png)
 :::
 :::
 
@@ -3714,7 +3700,7 @@ plt.show()
 ```
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/5564b60957f5283a1579f443d18a060918610799.png)
+![](asset/5564b60957f5283a1579f443d18a060918610799.png)
 :::
 :::
 
@@ -3880,7 +3866,7 @@ plt.show()
 :::
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/e158fa62c3c77ffd68ebfe5c82f674a0b4f00aab.png)
+![](asset/e158fa62c3c77ffd68ebfe5c82f674a0b4f00aab.png)
 :::
 :::
 
@@ -3979,7 +3965,7 @@ plt.show()
 ```
 
 ::: {.output .display_data}
-![](vertopal_227f36bfd75d41f88478729807f0557e/4493463382ed800cbc1194a5297ad700f5225a54.png)
+![](asset/4493463382ed800cbc1194a5297ad700f5225a54.png)
 :::
 :::
 
