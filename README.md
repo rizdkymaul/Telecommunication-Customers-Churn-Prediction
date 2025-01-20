@@ -73,7 +73,7 @@ Customer](https://github.com/rizdkymaul/Telecommunication-Customers-Churn-Predic
 
 ● Churn: the target variable indicating whether the customer has churned or not
 
-
+![alt text](https://github.com/rizdkymaul/Telecommunication-Customers-Churn-Prediction/blob/main/asset/churn%20vs%20no%20churn.png)
 
 
 # **🎉Final Results🎉**
@@ -81,6 +81,8 @@ Customer](https://github.com/rizdkymaul/Telecommunication-Customers-Churn-Predic
 
 :::
 `1. Which features should be used based on the EDA results?`
+
+![alt text](https://github.com/rizdkymaul/Telecommunication-Customers-Churn-Prediction/blob/main/asset/Korelasi.png)
 
 Based on the correlation heatmap above, there are several features that have significant correlations with the target feature churn (according to the threshold value set at 0.15).
 
@@ -125,7 +127,9 @@ Features Not Used
 Here is the model training for predicting churn as the target variable based on business needs:
 
 ● XGBoost: Although it has a lower recall value, XGBoost shows the best ability to distinguish between classes in the training data (highest Train ROC AUC). However, the lower recall value can be a problem if the main goal is to capture all customers who churn.
+
 ● Random Forest: It has a good balance between ROC AUC and recall. With a high Test ROC AUC (0.860) and good recall (0.850), Random Forest is a solid choice for applications requiring effective churn detection.
+
 ● Decision Tree: Although it has the highest recall (0.860), the lower ROC AUC value indicates that this model may not be as strong as the others in distinguishing between classes.
 
 :::
@@ -135,6 +139,8 @@ Here is the model training for predicting churn as the target variable based on 
 
 Here is the model evaluation using Recall and ROC-AUC metrics:
 
+![alt text](https://github.com/rizdkymaul/Telecommunication-Customers-Churn-Prediction/blob/main/asset/Evaluasi%20Model.png)
+
 ● Recall:
 Decision Tree has the highest recall (0.860), meaning this model is most effective in capturing customers who churn. Random Forest also has a good recall (0.850), while XGBoost has the lowest recall (0.720).
 
@@ -143,9 +149,12 @@ XGBoost has the highest Train ROC AUC (0.940), indicating the best ability to di
 
 **Random Forest has the highest Test ROC AUC (0.860), showing good performance on the test data**
 
+
 # Business Recommendations Based on Final Model Evaluation and Feature Importance of the Random Forest Model:
 
-**1. Fokus pada Kontrak**
+![alt text](https://github.com/rizdkymaul/Telecommunication-Customers-Churn-Prediction/blob/main/asset/feature%20importance.png)
+
+**1. Focus on Contracts**
 
 Important Feature: `contract`
 
@@ -159,65 +168,42 @@ Important Feature: `monthlycharges`
 -   Recommendation: Review the monthly cost structure and consider offering more competitive packages or discounts for customers at risk of churn. Price adjustments can enhance customer satisfaction and reduce churn.
 -   Campaign Option: **Savings Package**: Launch a new package with more competitive pricing and additional benefits. Offer promotions for customers at risk of churn.
 
-1.  **Manfaatkan Tenure dan Total Charges**
+**3. Leverage Tenure and Total Charges**
 
-Feature `Penting: tenure_range dan totalcharges`
+Important Features: `Penting: tenure_range and totalcharges`
 
--   Rekomendasi: Identifikasi pelanggan dengan tenure yang lebih pendek
-    dan total charges yang tinggi. Tawarkan program loyalitas atau
-    penghargaan untuk meningkatkan retensi pelanggan yang telah
-    berinvestasi lebih banyak dalam layanan.
--   Opsi Campaign : `Loyalty Rewards`: Program penghargaan untuk
-    pelanggan yang telah berlangganan lebih dari satu tahun. Berikan
-    diskon atau bonus layanan untuk meningkatkan loyalitas.
+-   Recommendation: Identify customers with shorter tenures and high total charges. Offer loyalty programs or rewards to enhance retention for customers who have invested more in the service.
+-   Campaign Option `Loyalty Rewards`:  A rewards program for customers who have subscribed for over a year. Provide discounts or bonus services to enhance loyalty.
 
-1.  **Tingkatkan Layanan Internet**
+**4. Improve Internet Service**
 
-Feature Penting: `internetservice`
+Important Feature: `internetservice`
 
--   Rekomendasi: Pastikan kualitas layanan internet yang ditawarkan
-    memenuhi harapan pelanggan. Pertimbangkan untuk meningkatkan
-    kecepatan atau menawarkan paket tambahan yang menarik untuk
-    pelanggan yang menggunakan layanan internet.
--   Opsi Campaign : `Upgrade Gratis`: Tawarkan upgrade kecepatan
-    internet gratis selama satu bulan untuk pelanggan yang berisiko
-    churn.
+-   Recommendation: Ensure the quality of the internet service offered meets customer expectations. Consider upgrading speeds or offering attractive additional packages for customers using internet services.
+-   Campaign Option: `Free Upgrade`: Offer a free internet speed upgrade for one month to customers at risk of churn.
 
-1.  **Interaksi antara Tenure dan Biaya Bulanan**
+**5. Interaction between Tenure and Monthly Costs**
 
-Feature Penting: `tenure_monthly_charge_interaction`
+Important Feature: `tenure_monthly_charge_interaction`
 
--   Rekomendasi: Analisis interaksi antara lama berlangganan dan biaya
-    bulanan untuk mengidentifikasi pola churn. Tawarkan penyesuaian
-    harga atau promosi khusus untuk pelanggan yang telah lama
-    berlangganan tetapi merasa biaya bulanan terlalu tinggi.
--   Opsi Campaign `Penyesuaian Harga`: Tawarkan penyesuaian harga untuk
+-   Recommendation: Analyze the interaction between subscription duration and monthly costs to identify churn patterns. Offer price adjustments or special promotions for long-term customers who feel the monthly costs are too high.
+-   Campaign Option: `Price Adjustment`: Tawarkan penyesuaian harga untuk
     pelanggan yang telah lama berlangganan tetapi merasa biaya terlalu
     tinggi.
 
-1.  **Tingkatkan Layanan Pelanggan**
+**6. Enhance Customer Service**
 
-Feature Penting: `techsupport, onlinesecurity, dan paperlessbilling`
+Important Features: `techsupport, onlinesecurity, and paperlessbilling`
 
--   Rekomendasi: Tingkatkan layanan pelanggan dengan menyediakan
-    dukungan teknis yang lebih baik dan opsi keamanan online. Edukasi
-    pelanggan tentang manfaat dari layanan ini untuk meningkatkan
-    kepuasan dan loyalitas.
--   Opsi Campaign `Support Anytime`: Luncurkan layanan dukungan 24/7
-    dengan pelatihan khusus untuk tim layanan pelanggan. Tawarkan sesi
-    edukasi online tentang penggunaan layanan.
+-   Recommendation: Improve customer service by providing better technical support and online security options. Educate customers about the benefits of these services to enhance satisfaction and loyalty.
+-   Campaign Option: `Support Anytime`: Launch 24/7 support services with specialized training for customer service teams. Offer online education sessions on service usage.
 
-1.  **Segmentasi Pelanggan**
+**7. Segmentasi Pelanggan**
 
-Feature Penting:
-`dependents, streamingmovies, streamingtv, partner, dan seniorcitizen`
+Important Features::
+`dependents, streamingmovies, streamingtv, partner, and seniorcitizen`
 
--   Rekomendasi: Lakukan segmentasi pelanggan berdasarkan fitur-fitur
-    ini untuk menyesuaikan penawaran dan komunikasi. Misalnya, tawarkan
-    paket khusus untuk keluarga, pelanggan senior, atau pengguna layanan
-    streaming.
--   Opsi Campaign `Paket Keluarga`: Tawarkan paket khusus untuk keluarga
-    dengan layanan streaming dan dukungan tambahan. `Senior Special`:
-    Program khusus untuk pelanggan senior dengan diskon dan layanan yang
-    disesuaikan.
+-   RRecommendation: Conduct customer segmentation based on these features to tailor offerings and communications. For example, offer special packages for families, senior customers, or streaming service users.
+-   Campaign Option: `Family Package`:  Offer special packages for families with streaming services and additional support. `Senior Special`:
+    A special program for senior customers with discounts and tailored services.
 :::
